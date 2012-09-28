@@ -72,7 +72,7 @@ echo "
 	   <link rel=\"icon\" href=\"/favicon.png\" type=\"image/x-png\" />
 	  </head>
 	  <body>
-	   <a href=\"https://github.com/fastpoke/pic_uploader\"><img style=\"z-index: -1; position: absolute; top: 0; right: 0; border: 0;\" src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png\" alt=\"Fork me on GitHub\"></a>
+	   <a href=\"https://github.com/fastpoke/image_uploader\"><img style=\"z-index: -1; position: absolute; top: 0; right: 0; border: 0;\" src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png\" alt=\"Fork me on GitHub\"></a>
 	   <div class=\"result\">
 	    <div class=\"text\">Click on image for a direct link</div>
 	    <div class=\"info\">
