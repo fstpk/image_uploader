@@ -1,0 +1,6 @@
+RewriteEngine On
+Options +FollowSymlinks
+#IndexOptions FoldersFirst
+RewriteBase /
+
+RewriteRule ^upload$ /upload.php
