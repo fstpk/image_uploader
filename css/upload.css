@@ -113,17 +113,26 @@ div.text {
 	font-weight: bold;
 }
 
-div.text a {
+.back {
+        text-align: center;
+        font-family: Comfortaa;
+        font-size: 40px;
+        padding-top: 25px;
+	padding-bottom: 25px;
+        font-weight: bold;
+}
+
+.back a {
 	font-weight: bold;
 	opacity: 0.7;
         transition: 1s;
         -moz-transition: 1s;
         -webkit-transition: 1s;
         -o-transition: 1s;
-
+	text-decoration: none;
 }
 
-div.text a:hover {
+.back a:hover {
 	text-decoration: none;
 	opacity: 1;
 	transition: 1s;
@@ -156,12 +165,28 @@ div.text a:hover {
 	float: left;
 }
 
+.error {
+	width: 900px;
+	margin: auto;
+	padding-top: 100px;
+	padding-bottom: 45px;
+}
+
 .fail {
 	font-family: Comfortaa;
 	font-size: 100px;
 	font-weight: bold;
 	text-align: center;
 	color: #ff0000;
+	padding-bottom: 80px;
+}
+
+.message {
+	font-family: Comfortaa;
+	font-size: 50px;
+	font-weight: normal;
+	text-align: center;
+	color: #000;
 }
 
 .done {
@@ -174,6 +199,10 @@ div.text a:hover {
 
 .bold {
 	font-weight: bold;
+}
+
+.red {
+	color: #ff0000;
 }
 
 .footer {

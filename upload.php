@@ -1,20 +1,32 @@
 <?php
- $blacklist = array(".php", ".phtml", ".php3", ".php4");
+ //e.g. http://server.tld/
+ $url = ; 
+
+ $blacklist = array(".php", ".phtml", ".php3", ".php4", ".pl", ".py", ".sh", ".exe");
  foreach ($blacklist as $item) {
   if(preg_match("/$item\$/i", $_FILES['userfile']['name'])) {
    echo "
 	<!DOCTYPE html>
 	 <html>
 	  <head>
-	  <title>Upload result</title>
+	  <title>Upload result :: fail</title>
 	  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
           <meta name=\"generator\" content=\"cat /dev/urandom > index.html\" />
 	  <link href=\"/css/upload.css\" rel=\"stylesheet\" media=\"all\" />
 	  <link rel=\"icon\" href=\"/favicon.png\" type=\"image/x-png\" />
 	 </head>
 	 <body>
-	  <div class=\"layer\"><div class=\"fail\">Nope.</div></div>
-          <div class=\"text\"><a href=\"http://up.fastpoke.org/\" target=\"_self\">back</a></div>
+	  <div class=\"error\">
+	   <div class=\"fail\">
+	    Nope
+	   </div>
+	   <div class=\"message\">
+	    Prohibited file type
+	    <br>
+	    Allow only <span class=\"bold red\">.png</span>, <span class=\"bold red\">.jpg</span>, <span class=\"bold red\">.gif</span>
+           </div>
+          </div>
+          <div class=\"back\"><a href=\"$url\" target=\"_self\">back</a></div>
 	 </body>
 	</html>
 	";
@@ -28,15 +40,24 @@
 	<!DOCTYPE html>
 	 <html>
 	  <head>
-	   <title>Upload result</title>
+	   <title>Upload result :: fail</title>
 	   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
 	   <meta name=\"generator\" content=\"cat /dev/urandom > index.html\" />
 	   <link href=\"/css/upload.css\" rel=\"stylesheet\" media=\"all\" />
 	   <link rel=\"icon\" href=\"/favicon.png\" type=\"image/x-png\" />
 	  </head>
 	  <body>
-	   <div class=\"layer\"><div class=\"fail\">Nope.</div></div>
-           <div class=\"text\"><a href=\"http://up.fastpoke.org/\" target=\"_self\">back</a></div>
+          <div class=\"error\">
+           <div class=\"fail\">
+            Nope
+           </div>
+           <div class=\"message\">
+            Prohibited file type
+            <br>
+            Allow only <span class=\"bold red\">.png</span>, <span class=\"bold red\">.jpg</span>, <span class=\"bold red\">.gif</span>
+           </div>
+          </div>
+          <div class=\"back\"><a href=\"$url\" target=\"_self\">back</a></div>
 	  </body>
 	 </html>
 	";
@@ -82,13 +103,10 @@ echo "
 	     <div class=\"padding_left\">Upload time:</div> <div><span class=\"bold\">0.$loadtime</span> sec</div>
 	    </div>
 	    <div class=\"image\">
-	     <a href=\"http://up.fastpoke.org/img/$md5.$ext\" class=\"link\"><img class=\"done\" src=\"http://up.fastpoke.org/img/$md5.$ext\" title=\"$md5.$ext\"></a>
+	     <a href=\"$url/img/$md5.ext\" class=\"link\"><img class=\"done\" src=\"$url/img/$md5.$ext\" title=\"$md5.$ext\"></a>
 	    </div>
 	   </div>
-           <div class=\"text\"><a href=\"http://up.fastpoke.org/\" target=\"_self\">back</a></div>
-	   <div class=\"footer\">
-	    <a href=\"http://fastpoke.org/\" class=\"link\">fastpoke.org</a>&nbsp;|&nbsp;2009&nbsp;×&nbsp;2012<br>
-	  </div>
+           <div class=\"back\"><a href=\"$url\" target=\"_self\">back</a></div>
 	  </body>
 	 </html>
       ";
@@ -101,15 +119,22 @@ echo "
 	 <!DOCTYPE html>
 	 <html>
 	  <head>
-	   <title>Upload result</title>
+	   <title>Upload result :: fail</title>
 	   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
 	   <meta name=\"generator\" content=\"cat /dev/urandom > index.html\" />
 	   <link href=\"/css/upload.css\" rel=\"stylesheet\" media=\"all\" />
 	   <link rel=\"icon\" href=\"/favicon.png\" type=\"image/x-png\" />
 	  </head>
 	  <body>
-	  <div class=\"layer\"><div class=\"fail\">So much failed :(</div></div>
-	  <div class=\"text\"><a href=\"http://up.fastpoke.org/\" target=\"_self\">back</a></div>
+          <div class=\"error\">
+           <div class=\"fail\">
+            Oops~
+           </div>
+           <div class=\"message\">
+            So much failed :(
+           </div>
+          </div>
+          <div class=\"back\"><a href=\"$url\" target=\"_self\">back</a></div>
 	  </body>
 	 </html>
 	";
