@@ -1,3 +1,7 @@
+v 1.2.1
++ add error status message
+* fix <link> to css (by Zetoke)
+
 v 1.2
 * important layout fix
 
