@@ -1,0 +1,9 @@
+v 1.1
++ global $url pattern
+* edit error page
+* edit css
+
+v. 1.0
++ add core files
++ fonts
++ .htaccess
