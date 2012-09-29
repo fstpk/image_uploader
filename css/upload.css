@@ -34,21 +34,17 @@ a:hover {
 form {
 	margin-top: 10% !important;
 	padding: 30px;
-	width: 350px;
+	width: 360px;
 	height: 140px;
 	margin: auto;
 	border:1px solid rgba(0,0,0,0.05);
 	border-radius: 4px;
-	background: transparent;
-	-moz-transition: 1s;
-	-o-transtition: 1s;
-	-webkit-transition: 1s;
-	transition: 1s;
 	box-shadow: 0px 1px 0px rgba(255,255,255,1) inset;
 	-moz-box-shadow: 0px 1px 0px rgba(255,255,255,1) inset;
 	-webkit-box-shadow: 0px 1px 0px rgba(255,255,255,1) inset;
 	-o-box-shadow: 0px 1px 0px rgba(255,255,255,1) inset;
 	background:-moz-linear-gradient( center top, rgba(0,0,0,0.01) 5%, rgba(0,0,0,0.05) 100% );
+	background:-o-linear-gradient(top, rgba(0,0,0,0.01) 5%, rgba(0,0,0,0.05) 100% );
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, rgba(0,0,0,0.02)), color-stop(1, rgba(0,0,0,0.05)) );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0,0,0.02)', endColorstr='rgba(0,0,0,0.05)');
 	background-color:rgba(0,0,0,0.01);
@@ -59,12 +55,14 @@ form {
 	padding: 10px 0px 10px 0px;
 }*/
 
-span.text {
+.title {
 	font-family: Comfortaa;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 29px;
 	text-align: center;
 	text-shadow: 1px 1px 0 #FFFFFF;
+	width: 360px;
+	margin: auto;
 }
 
 input#upload {
@@ -79,6 +77,7 @@ input#upload {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
 	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+        background:-o-linear-gradient( top, #ededed 5%, #dfdfdf 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
 	background-color:#ededed;
 	-moz-border-radius:3px;
@@ -96,6 +95,7 @@ input#upload {
 .button:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
 	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+        background:-o-linear-gradient( top, #dfdfdf 5%, #ededed 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
 	background-color:#dfdfdf;
 }
