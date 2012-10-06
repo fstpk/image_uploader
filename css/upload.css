@@ -42,7 +42,7 @@ form {
 	background:-moz-linear-gradient( center top, rgba(0,0,0,0.01) 5%, rgba(0,0,0,0.05) 100% );
 	background:-o-linear-gradient(top, rgba(0,0,0,0.01) 5%, rgba(0,0,0,0.05) 100% );
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, rgba(0,0,0,0.02)), color-stop(1, rgba(0,0,0,0.05)) );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0,0,0.02)', endColorstr='rgba(0,0,0,0.05)');
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee');
 	background-color:rgba(0,0,0,0.01);
 }
 
