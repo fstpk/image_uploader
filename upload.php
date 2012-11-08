@@ -101,6 +101,7 @@
      /* if($delay>10) 
 	$delay = 10;
      sleep($delay);*/
+     $type = $imageinfo['mime'];
 
 echo "
 	 <!DOCTYPE html>
@@ -118,6 +119,7 @@ echo "
 	    <div class=\"text\">Click on image for a direct link</div>
 	    <div class=\"info\">
 	     <div class=\"padding_left\">File name:</div>   <div><a href=\"http://up.fastpoke.org/img/$md5.$ext\" class=\"link\">$md5.$ext</a></div>
+             <div class=\"padding_left\">File type:</div>   <div><span class=\"bold\">$type</span></div>
 	     <div class=\"padding_left\">File size:</div>   <div><span class=\"bold\">$size</span> kb</div>
 	     <div class=\"padding_left\">Upload date:</div> <div><span class=\"bold\">$time</span></div>
 	     <div class=\"padding_left\">Upload time:</div> <div><span class=\"bold\">0.$loadtime</span> sec</div>
