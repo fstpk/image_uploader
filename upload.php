@@ -118,11 +118,15 @@ echo "
 	   <div class=\"result\">
 	    <div class=\"text\">Click on image for a direct link</div>
 	    <div class=\"info\">
-	     <div class=\"padding_left\">File name:</div>   <div><a href=\"http://up.fastpoke.org/img/$md5.$ext\" class=\"link\">$md5.$ext</a></div>
-             <div class=\"padding_left\">File type:</div>   <div><span class=\"bold\">$type</span></div>
-	     <div class=\"padding_left\">File size:</div>   <div><span class=\"bold\">$size</span> kb</div>
-	     <div class=\"padding_left\">Upload date:</div> <div><span class=\"bold\">$time</span></div>
-	     <div class=\"padding_left\">Upload time:</div> <div><span class=\"bold\">0.$loadtime</span> sec</div>
+	     <div class=\"padding_left\">File name:</div>   <div><a href=\"$url/$md5.$ext\" class=\"link\">$md5.$ext</a></div>
+	     <div class=\"padding_left\">File resolution:</div>     <div><span class=\"bold\">";$resolution = getimagesize("$uploaddir$md5.$ext");
+	     											$width  = print($resolution [0]) . 'px' .' x ';
+	     											$height = print($resolution [1]) . 'px';
+	     											echo "</span></div>
+	     <div class=\"padding_left\">File type:</div>           <div><span class=\"bold\">$type</span></div>
+	     <div class=\"padding_left\">File size:</div>           <div><span class=\"bold\">$size</span> kb</div>
+	     <div class=\"padding_left\">Upload date:</div>         <div><span class=\"bold\">$time</span></div>
+	     <div class=\"padding_left\">Upload time:</div>         <div><span class=\"bold\">0.$loadtime</span> sec</div>
 	    </div>
 	    <div class=\"image\">
 	     <a href=\"$url/img/$md5.ext\" class=\"link\"><img class=\"done\" src=\"$url/img/$md5.$ext\" title=\"$md5.$ext\"></a>
