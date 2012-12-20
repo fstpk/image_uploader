@@ -187,6 +187,7 @@ div.text {
 }
 
 .done {
+	min-width: 500px;
 	max-width: 500px;
 	max-height: 100%;
 	margin: auto;
