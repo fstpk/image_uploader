@@ -119,7 +119,7 @@ echo "
 	   <div class=\"result\">
 	    <div class=\"text\">Click on image for a direct link</div>
 	    <div class=\"info\">
-	     <div class=\"padding_left\">File name:</div>   <div><a href=\"$url/$md5.$ext\" class=\"link\">$md5.$ext</a></div>
+	     <div class=\"padding_left\">File name:</div>   <div><a href=\"$url/img/$md5.$ext\" class=\"link\">$md5.$ext</a></div>
 	     <div class=\"padding_left\">File resolution:</div>     <div><span class=\"bold\">";$resolution = getimagesize("$uploaddir$md5.$ext");
 	     											$width  = print($resolution [0]) . 'px</span>' . ' × <span class="bold">';
 	     											$height = print($resolution [1]) . 'px</span>';
