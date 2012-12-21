@@ -121,7 +121,7 @@ echo "
 	    <div class=\"info\">
 	     <div class=\"padding_left\">File name:</div>   <div><a href=\"$url/img/$md5.$ext\" class=\"link\">$md5.$ext</a></div>
 	     <div class=\"padding_left\">File resolution:</div>     <div><span class=\"bold\">";$resolution = getimagesize("$uploaddir$md5.$ext");
-	     											$width  = print($resolution [0]) . 'px</span>' . ' × <span class="bold">';
+	     											$width  = print($resolution [0]) . 'px</span>' . ' &times; <span class="bold">';
 	     											$height = print($resolution [1]) . 'px</span>';
 	     											echo "</div>
 	     <div class=\"padding_left\">File type:</div>           <div><span class=\"bold\">$type</span></div>
