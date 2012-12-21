@@ -130,7 +130,7 @@ echo "
 	     <div class=\"padding_left\">Upload time:</div>         <div><span class=\"bold\">0.$loadtime</span> sec</div>
 	    </div>
 	    <div class=\"image\">
-	     <a href=\"$url/img/$md5.ext\" class=\"link\"><img class=\"done\" src=\"$url/img/$md5.$ext\" title=\"$md5.$ext\"></a>
+	     <a href=\"$url/img/$md5.$ext\" class=\"link\"><img class=\"done\" src=\"$url/img/$md5.$ext\" title=\"$md5.$ext\"></a>
 	    </div>
 	   </div>
            <div class=\"back\"><a href=\"$url\" target=\"_self\">back</a></div>
