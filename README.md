@@ -1,7 +1,7 @@
 image_uploader
 ==============
 
-PHP picture uploader script (rename end file to md5sum).
+PHP image uploader script (rename end file to md5sum).
 
 - проверка файлов по mime-типу;
 - проверка по расширению файла;
