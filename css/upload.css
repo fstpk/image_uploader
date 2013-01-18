@@ -1,11 +1,11 @@
 @font-face {
-        font-family: Comfortaa;
-        src: url("/fonts/Comfortaa-Regular.ttf");
+        	font-family: Comfortaa;
+        	src: url("/fonts/Comfortaa-Regular.ttf");
 }
 
 @font-face {
-        font-family: Consolas;
-        src: url("/fonts/consola.ttf");
+	        font-family: Consolas;
+		src: url("/fonts/consola.ttf");
 }
    
 html {
@@ -34,7 +34,7 @@ form {
 		background: -moz-linear-gradient( center top, rgba(0,0,0,0.01) 5%, rgba(0,0,0,0.05) 100% );
 		background: -o-linear-gradient(top, rgba(0,0,0,0.01) 5%, rgba(0,0,0,0.05) 100% );
 		background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, rgba(0,0,0,0.02)), color-stop(1, rgba(0,0,0,0.05)) );
-	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee');
+	    	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee');
 		background-color: rgba(0,0,0,0.01);
 		-webkit-border-radius: 4px;
 		   -moz-border-radius: 4px;
@@ -73,7 +73,7 @@ input#upload {
 		text-decoration: none;
 		background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
 		background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
-	    background: -o-linear-gradient( top, #ededed 5%, #dfdfdf 100% );
+	    	background: -o-linear-gradient( top, #ededed 5%, #dfdfdf 100% );
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
 		-webkit-box-shadow: 0px 1px 0px 0px #fff inset;
 		   -moz-box-shadow: 0px 1px 0px 0px #fff inset;
@@ -88,7 +88,7 @@ input#upload {
 .button:hover {
 		background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
 		background: -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
-	    background: -o-linear-gradient( top, #dfdfdf 5%, #ededed 100% );
+	    	background: -o-linear-gradient( top, #dfdfdf 5%, #ededed 100% );
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
 		background-color: #dfdfdf;
 }
@@ -108,12 +108,12 @@ div.text {
 }
 
 .back {
-        text-align: center;
-        font-family: Comfortaa;
-        font-size: 40px;
-        padding-top: 25px;
+	        text-align: center;
+	        font-family: Comfortaa;
+	        font-size: 40px;
+        	font-weight: bold;
+		padding-top: 25px;
 		padding-bottom: 25px;
-        font-weight: bold;
 }
 
 .back a {
@@ -212,7 +212,7 @@ div.text {
 }
 
 .footer {
-        text-align: center;
+		text-align: center;
 		font-size: 10px;
 		text-decoration: none;
 		margin: 40px 0 0 0;
@@ -224,7 +224,7 @@ div.text {
 }
 
 .footer:hover {
-	    opacity: 1;
+		opacity: 1;
 		-webkit-transition: 0.5s;
 		   -moz-transition: 0.5s;
 		     -o-transition: 0.5s;
@@ -232,15 +232,15 @@ div.text {
 }
 
 .footer:hover a {
-	    text-decoration: underline;
+	    	text-decoration: underline;
 }
 
 .footer_text {
-        font-family: Consolas;
-        color: rgba(0,0,0,0.8);
+	        font-family: Consolas;
+	        color: rgba(0,0,0,0.8);
 }
 
 .footer_text a {
-        font-weight: bold;
-        text-decoration: none;
+	        font-weight: bold;
+	        text-decoration: none;
 }
