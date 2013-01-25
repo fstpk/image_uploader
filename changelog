@@ -1,3 +1,11 @@
+v 1.4
++ fix lowercase file extension
++ imortant layout fix for result image (right resize image)
+* edit footer
+
+v 1.3
++ add file resolution
+
 v 1.2.1
 + add error status message
 * fix <link> to css (by Zetoke)
