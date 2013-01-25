@@ -87,6 +87,7 @@
   $uploaddir = 'img/';
   $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
   $ext = pathinfo($uploadfile, PATHINFO_EXTENSION);
+  $ext = strtolower($ext);
  
   if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
    $md5 = md5_file($uploadfile);
