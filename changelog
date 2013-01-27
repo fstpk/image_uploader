@@ -1,3 +1,7 @@
+v 1.5
++ add preload image
+* fix mime-type for jpeg/jpg
+
 v 1.4
 + fix lowercase file extension
 + imortant layout fix for result image (right resize image)
