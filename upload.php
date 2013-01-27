@@ -55,7 +55,7 @@
   }
 
  $imageinfo = getimagesize($_FILES['userfile']['tmp_name']);
- if($imageinfo['mime'] != 'image/gif' && $imageinfo['mime'] != 'image/jpeg' && $imageinfo['mime'] != 'image/png') {
+ if($imageinfo['mime'] != 'image/gif' && $imageinfo['mime'] != 'image/jpeg' && $imageinfo['mime'] != 'image/jpg' && $imageinfo['mime'] != 'image/png') {
   echo "
 	<!DOCTYPE html>
 	 <html>
