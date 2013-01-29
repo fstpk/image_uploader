@@ -9,3 +9,4 @@ PHP image uploader script (rename end file to md5sum).
 - ренейм в md5sum загружаемого файла;
 
 [Changelog](https://raw.github.com/fastpoke/image_uploader/master/changelog)
+==========
