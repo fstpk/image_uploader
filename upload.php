@@ -106,6 +106,7 @@
 
 
 echo "
+	 <!-- current version: 1.5 -->
 	 <!DOCTYPE html>
 	 <html>
 	  <head>
