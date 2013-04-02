@@ -2,7 +2,7 @@
  //e.g. http://server.tld/
  $url = ; 
 
- $file = $_FILES['file'];
+ $file = $_FILES['userfile'];
  $error_text = true;
  define("UPLOAD_ERR_EMPTY",5);
    if($file['size'] == 0 && $file['error'] == 0){
