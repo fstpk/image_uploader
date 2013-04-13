@@ -1,11 +1,11 @@
 @font-face {
         	font-family: Comfortaa;
-        	src: url("/fonts/Comfortaa-Regular.ttf");
+        	src: url("fonts/Comfortaa-Regular.ttf");
 }
 
 @font-face {
 	        font-family: Consolas;
-		src: url("/fonts/consola.ttf");
+		src: url("fonts/consola.ttf");
 }
    
 html {
@@ -215,10 +215,10 @@ div.text {
 }
 .image img {
 		margin-top: -20px;
-		-webkit-background: url("/preload.gif") no-repeat center;
-		   -moz-background: url("/preload.gif") no-repeat center;
-		     -o-background: url("/preload.gif") no-repeat center;
-		        background: url("/preload.gif") no-repeat center;
+		-webkit-background: url("preload.gif") no-repeat center;
+		   -moz-background: url("preload.gif") no-repeat center;
+		     -o-background: url("preload.gif") no-repeat center;
+		        background: url("preload.gif") no-repeat center;
 }
 
 .image:hover > .popup {
