@@ -86,6 +86,15 @@
   
   $uploaddir = 'img/';
   $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+
+  $name = basename($_FILES['userfile']['name']);
+  $str = strlen(utf8_decode($name));
+  if ($str>42) {
+  	$name = substr($name, 0, 42)."...";
+  } elseif ($str<42) {
+  	$name;
+  }
+
   $ext = pathinfo($uploadfile, PATHINFO_EXTENSION);
   $ext = strtolower($ext);
  
@@ -106,7 +115,7 @@
 
 
 echo "
-	 <!-- current version: 1.5 -->
+	 <!-- current version: 1.6 -->
 	 <!DOCTYPE html>
 	 <html>
 	  <head>
@@ -119,7 +128,7 @@ echo "
 	  <body>
 	   <a href=\"https://github.com/fastpoke/image_uploader\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"/forkme_right_gray_6d6d6d.png\" alt=\"Fork me on GitHub\"></a>
 	   <div class=\"result\">
-	    <div class=\"text\">Click on image for a direct link</div>
+	    <div class=\"text\">$name</div>
 	    <div class=\"info\">
 	     <div class=\"padding_left\">File name:</div>   <div><a href=\"$url/img/$md5.$ext\" class=\"link\">$md5.$ext</a></div>
 	     <div class=\"padding_left\">File resolution:</div>     <div><span class=\"bold\">";$resolution = getimagesize("$uploaddir$md5.$ext");
@@ -132,6 +141,7 @@ echo "
 	     <div class=\"padding_left\">Upload time:</div>         <div><span class=\"bold\">0.$loadtime</span> sec</div>
 	    </div>
 	    <div class=\"image\">
+    	     <div class=\"popup\">Click on image for a direct link</div>
 	     <a href=\"$url/img/$md5.$ext\" class=\"link\"><img class=\"done\" src=\"$url/img/$md5.$ext\" title=\"$md5.$ext\"></a>
 	    </div>
 	   </div>
