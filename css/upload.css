@@ -39,10 +39,10 @@ form {
 		   -moz-border-radius: 4px;
 		     -o-border-radius: 4px;
 		        border-radius: 4px;
-		-webkit-box-shadow: 0px 1px 0px rgba(255,255,255,1) inset;
-		   -moz-box-shadow: 0px 1px 0px rgba(255,255,255,1) inset;
-		     -o-box-shadow: 0px 1px 0px rgba(255,255,255,1) inset;
-		        box-shadow: 0px 1px 0px rgba(255,255,255,1) inset;
+		-webkit-box-shadow: 0px 1px 0px rgba(0,0,0,0.01) inset, -1px 0px 1px rgba(0,0,0,0.01) inset, 0px 2px 1px rgba(0,0,0,0.03) inset;
+		   -moz-box-shadow: 0px 1px 0px rgba(0,0,0,0.01) inset, -1px 0px 1px rgba(0,0,0,0.01) inset, 0px 2px 1px rgba(0,0,0,0.03) inset;
+		     -o-box-shadow: 0px 1px 0px rgba(0,0,0,0.01) inset, -1px 0px 1px rgba(0,0,0,0.01) inset, 0px 2px 1px rgba(0,0,0,0.03) inset;
+		        box-shadow: 1px 0px 1px rgba(0,0,0,0.01) inset, -1px 0px 1px rgba(0,0,0,0.01) inset, 0px 2px 1px rgba(0,0,0,0.03) inset;
 }
 
 .title {
