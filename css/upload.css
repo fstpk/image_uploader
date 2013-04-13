@@ -197,22 +197,22 @@ div.text {
 .popup {
 		text-align: center;
 		height: 20px;
-		width: 500px;
+		width: 508px;
 		margin: auto;
 		position: relative;
-		background: rgba(255,255,255,0.7);
+		left: -5px;
+		background: rgba(255,255,255,0.9);
 		opacity: 1;
 		-webkit-transition: opacity 0.5s;
 		   -moz-transition: opacity 0.5s;
 		     -o-transition: opacity 0.5s;
 		        transition: opacity 0.5s;
-		border: 0px transparent;
+		border-bottom: 0px solid transparent;
 		-webkit-border-radius: 0px 0px 4px 4px;
 		   -moz-border-radius: 0px 0px 4px 4px;
 		     -o-border-radius: 0px 0px 4px 4px;
 		        border-radius: 0px 0px 4px 4px;
 }
-
 .image img {
 		margin-top: -20px;
 		-webkit-background: url("/preload.gif") no-repeat center;
