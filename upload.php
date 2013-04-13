@@ -1,6 +1,6 @@
 <?php
  //e.g. http://server.tld/
- $url = ; 
+ $url = ""; 
 
  $file = $_FILES['userfile'];
  
