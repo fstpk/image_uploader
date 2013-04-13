@@ -89,9 +89,9 @@
 
   $name = basename($_FILES['userfile']['name']);
   $str = strlen(utf8_decode($name));
-  if ($str>42) {
-  	$name = substr($name, 0, 42)."...";
-  } elseif ($str<42) {
+  if ($str>40) {
+  	$name = substr($name, 0, 40)."...";
+  } elseif ($str<40) {
   	$name;
   }
 
