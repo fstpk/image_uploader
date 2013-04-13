@@ -87,14 +87,11 @@
   $uploaddir = 'img/';
   $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
   
-  $ext = pathinfo($uploadfile, PATHINFO_EXTENSION);
-  $ext = strtolower($ext);
-
+  $ext = strtolower(pathinfo($uploadfile, PATHINFO_EXTENSION));
   $name = basename($_FILES['userfile']['name']);
-  $str = strlen(utf8_decode($name));
-  if ($str>40) {
+  if (strlen(utf8_decode($name)) > 40) {
   	$name = substr($name, 0, 17)." ... ".substr($name, -17, -4).".$ext";
-  } elseif ($str<40) {
+  } elseif (strlen(utf8_decode($name)) < 40) {
   	$name;
   }
 
