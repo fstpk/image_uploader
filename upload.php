@@ -3,6 +3,7 @@
  $url = ; 
 
  $file = $_FILES['userfile'];
+ 
  $error_text = true;
  define("UPLOAD_ERR_EMPTY",5);
    if($file['size'] == 0 && $file['error'] == 0){
@@ -21,7 +22,6 @@
   );
  $err = ($error_text) ? $upload_errors[$file['error']] : $file['error'] ;
 
-
  $blacklist = array(".php", ".phtml", ".php3", ".php4", ".pl", ".py", ".sh", ".exe");
  foreach ($blacklist as $item) {
   if(preg_match("/$item\$/i", $_FILES['userfile']['name'])) {
@@ -32,8 +32,8 @@
 	  <title>Upload result :: fail</title>
 	  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
           <meta name=\"generator\" content=\"cat /dev/urandom > index.html\" />
-	  <link href=\"/css/upload.css\" rel=\"stylesheet\" media=\"all\" />
-	  <link rel=\"icon\" href=\"/favicon.png\" type=\"image/x-png\" />
+	  <link href=\"css/upload.css\" rel=\"stylesheet\" media=\"all\" />
+	  <link rel=\"icon\" href=\"favicon.png\" type=\"image/x-png\" />
 	 </head>
 	 <body>
 	  <div class=\"error\">
@@ -63,8 +63,8 @@
 	   <title>Upload result :: fail</title>
 	   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
 	   <meta name=\"generator\" content=\"cat /dev/urandom > index.html\" />
-	   <link href=\"/css/upload.css\" rel=\"stylesheet\" media=\"all\" />
-	   <link rel=\"icon\" href=\"/favicon.png\" type=\"image/x-png\" />
+	   <link href=\"css/upload.css\" rel=\"stylesheet\" media=\"all\" />
+	   <link rel=\"icon\" href=\"favicon.png\" type=\"image/x-png\" />
 	  </head>
 	  <body>
           <div class=\"error\">
@@ -120,11 +120,11 @@ echo "
 	   <title>Upload result :: $md5.$ext</title>
 	   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
 	   <meta name=\"generator\" content=\"cat /dev/urandom > index.html\" />
-	   <link href=\"/css/upload.css\" rel=\"stylesheet\" media=\"all\" />
-	   <link rel=\"icon\" href=\"/favicon.png\" type=\"image/x-png\" />
+	   <link href=\"css/upload.css\" rel=\"stylesheet\" media=\"all\" />
+	   <link rel=\"icon\" href=\"favicon.png\" type=\"image/x-png\" />
 	  </head>
 	  <body>
-	   <a href=\"https://github.com/fastpoke/image_uploader\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"/forkme_right_gray_6d6d6d.png\" alt=\"Fork me on GitHub\"></a>
+	   <a href=\"https://github.com/fastpoke/image_uploader\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"forkme_right_gray_6d6d6d.png\" alt=\"Fork me on GitHub\"></a>
 	   <div class=\"result\">
 	    <div class=\"text\">$name</div>
 	    <div class=\"info\">
@@ -159,8 +159,8 @@ echo "
 	   <title>Upload result :: fail</title>
 	   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
 	   <meta name=\"generator\" content=\"cat /dev/urandom > index.html\" />
-	   <link href=\"/css/upload.css\" rel=\"stylesheet\" media=\"all\" />
-	   <link rel=\"icon\" href=\"/favicon.png\" type=\"image/x-png\" />
+	   <link href=\"css/upload.css\" rel=\"stylesheet\" media=\"all\" />
+	   <link rel=\"icon\" href=\"favicon.png\" type=\"image/x-png\" />
 	  </head>
 	  <body>
           <div class=\"error\">
