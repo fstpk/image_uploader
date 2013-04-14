@@ -98,11 +98,10 @@ input#upload {
 }
 
 div.text {
-		text-align: center;
 		font-family: Comfortaa;
 		font-size: 40px;
-		padding-top: 20px;
-		padding-bottom: 40px;
+		padding-top: 50px;
+		padding-bottom: 10px;
 		font-weight: bold;
 }
 
@@ -147,7 +146,7 @@ div.text {
 }
 
 .info {
-		border: 1px solid rgba(0,0,0,0.3);
+		border: 1px solid rgba(0,0,0,0.2);
 		padding: 5px;
 		float: right;
 		width: 400px;
@@ -187,11 +186,7 @@ div.text {
 		width: 500px;
 		padding: 5px;
 		background: #fff;
-		border: 1px solid rgba(0,0,0,0.3);
-		-webkit-border-radius: 2px;
-		   -moz-border-radius: 2px;
-		     -o-border-radius: 2px;
-		        border-radius: 2px;
+		border: 1px solid rgba(0,0,0,0.2);
 }
 
 .popup {
@@ -201,7 +196,7 @@ div.text {
 		margin: auto;
 		position: relative;
 		left: -5px;
-		background: rgba(255,255,255,0.9);
+		background: rgba(255,255,255,0.8);
 		opacity: 1;
 		-webkit-transition: opacity 0.5s;
 		   -moz-transition: opacity 0.5s;
