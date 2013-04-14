@@ -91,7 +91,7 @@
   $extlen = strlen(utf8_decode($ext));
   $name = basename($_FILES['userfile']['name']);
   if (strlen(utf8_decode($name)) > 40) {
-  	$name = substr($name, 0, 17)." ... ".substr($name, -17, -$extlen)."$ext";
+  	$name = substr($name, 0, 20)." ... ".substr($name, -15, -$extlen)."$ext";
   } elseif (strlen(utf8_decode($name)) < 40) {
   	$name;
   }
