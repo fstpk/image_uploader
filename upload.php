@@ -105,7 +105,7 @@
      $filesize = filesize("$uploaddir$md5.$ext");
      $size = (int)($filesize/1024);
      $type = $imageinfo['mime'];
-     $loadtime = rand(10, 100);
+     $loadtime = 0 . "." . rand(1, 10) . rand(0, 10);
      /*$loadtime = (int)($filesize/20480);*/
      /* if($delay>10) 
 	$delay = 10;
@@ -136,7 +136,7 @@ echo "
 	     <div class=\"padding_left\">File type:</div>           <div><span class=\"bold\">$type</span></div>
 	     <div class=\"padding_left\">File size:</div>           <div><span class=\"bold\">$size</span> kb</div>
 	     <div class=\"padding_left\">Upload date:</div>         <div><span class=\"bold\">$time</span></div>
-	     <div class=\"padding_left\">Upload time:</div>         <div><span class=\"bold\">0.$loadtime</span> sec</div>
+	     <div class=\"padding_left\">Upload time:</div>         <div><span class=\"bold\">$loadtime</span> sec</div>
 	    </div>
 	    <div class=\"image\">
     	     <div class=\"popup\">Click on image for a direct link</div>
