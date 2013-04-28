@@ -106,11 +106,6 @@
      $size = (int)($filesize/1024);
      $type = $imageinfo['mime'];
      $loadtime = 0 . "." . rand(1, 10) . rand(0, 10);
-     /*$loadtime = (int)($filesize/20480);*/
-     /* if($delay>10) 
-	$delay = 10;
-     sleep($delay);*/
-
 
 echo "
 	 <!-- current version: 1.6 -->
