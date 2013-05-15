@@ -1,3 +1,7 @@
+v 1.7
+* width/height fix
+* some layout fix
+
 v 1.6
 + message popup (+autohide on hover)
 + new post-form backgound
