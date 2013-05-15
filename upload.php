@@ -111,7 +111,7 @@
      $loadtime = 0 . "." . rand(1, 10) . rand(0, 10);
 
 echo "
-	 <!-- current version: 1.6 -->
+	 <!-- current version: 1.7 -->
 	 <!DOCTYPE html>
 	 <html>
 	  <head>
