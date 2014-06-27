@@ -23,6 +23,7 @@
  $err = ($error_text) ? $upload_errors[$file['error']] : $file['error'] ;
 
  $blacklist = array(".php", ".phtml", ".php3", ".php4", ".pl", ".py", ".sh", ".exe");
+ $item = null;
  foreach ($blacklist as $item) {
   if(preg_match("/$item\$/i", $_FILES['userfile']['name'])) {
    echo "
